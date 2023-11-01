@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
     <title>Portfolio de Joseph</title>
 </head>
 
 <body>
 
     <!--Entete du portfolio, Titre et barre de navigation-->
-    <header>
-        <div>
-            <h1 id="top">Joseph Henri NODICHAO</h1>
-            <p>Web d&eacute;veloppeur/Maitre de c&eacute;r&eacute;monie/Voix off</p>
-            <img src="image4.jpeg" alt="photo de profil"/>
-        </div>
-       
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#resume">resume</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+    <header class="header">
+        <nav class="navigation">
+           <div class="logo">
+              <h1 id="top">Joseph Henri NODICHAO</h1>
+              <p>Web d&eacute;veloppeur/Maitre de c&eacute;r&eacute;monie/Voix off</p>
+            </div>
+
+            <div class="liste">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#resume">resume</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
-    <hr/>
 
     <!--Contenu principal du portfolio-->
     <main>
@@ -36,46 +38,58 @@
         <section id="about">
             <h2>About</h2>
             <p>
-                La communication est mon coeur de m&eacute;tier ! Qu'elle soit orale ou digitale,que ce soit
-                pour votre entreprise ou votre &eacute;v&egrave;nement, choisissez la qualit&eacute; !
+                <marquee>La communication est mon coeur de m&eacute;tier ! Qu'elle soit orale ou digitale,que ce soit
+                pour votre entreprise ou votre &eacute;v&egrave;nement, choisissez la qualit&eacute; !</marquee>
             </p>
+            <div class="profile-section">
+                <div class="profile">
+                    <img src="image5.jpeg" alt="photo de profil"  title="photo de profil"/>
+                </div>
+            </div>
         </section>
 
         <!--Realisations faites-->
         <section id="work">
             <h2>Work</h2>
             <p>
-               Voici quelques unes de mes r&eacute;alisations lors de divers &eacute;v&egrave;nements.
+                Voici quelques unes de mes r&eacute;alisations lors de divers &eacute;v&egrave;nements.
             </p>
-            <div>
-                <video width="220" height="240" controls autoplay muted>
-                    <source src="Xawaare De La Rentree.mp4" type="video/mp4" />
-                </video>
-                <h5>Voix off de l'evenement Xawaar&eacute; de la Rentr&eacute;e</h5>
+            <div class="works">
+
+                <div class="work w1">
+                    <video width="220" height="240" controls autoplay muted>
+                        <source src="Xawaare De La Rentree.mp4" type="video/mp4" />
+                    </video>
+                    <h5>Voix off de l'evenement Xawaar&eacute; de la Rentr&eacute;e</h5>
+                </div>
+
+                <div class="work w2">
+                    <video width="220" height="240" controls autoplay muted>
+                        <source src="le-joola_1mLGgZVI.mp4" type="video/mp4" />
+                        please check the audio extension
+                    </video>
+                    <h5>Voix off du m&eacute;morial Le JOOLA 2023</h5>
+                </div>
+                <div class="work w3">
+                    <audio controls>
+                        <source src="looyve.MP3" type="audio/mp3" />
+                        please check the audio extension
+                    </audio>
+                    <h5>Voix off du projet LooYve</h5>
+                </div>
+
             </div>
 
-            <div>
-                <video width="220" height="240" controls autoplay muted>
-                    <source src="le-joola_1mLGgZVI.mp4" type="video/mp4" />
-                    please check the audio extension
-                </video>
-                <h5>Voix off du m&eacute;morial Le JOOLA 2023</h5>
-            </div>
-            <div>
-                <audio controls>
-                          <source src="looyve.MP3"  type="audio/mp3"/>
-                          please check the audio extension
-                </audio>
-                <h5>Voix off du projet LooYve</h5>
-            </div>
         </section>
 
         <!--Mon CV-->
         <section id="resume">
             <h2>Resume</h2>
-            <figure>
-                <a href="CV Jojo Final_page-0001.jpg" target="_blank"><img src="tn_CV Jojo Final_page-0001.jpg" alt="cv de jojo"/></a>
-                <figcaption>Mon CV<a href="CV Jojo Final_page-0001.jpg" target="_blank">(Cliquer pour agrandir)</a></figcaption>
+            <figure class="monCv">
+                <a href="CV Jojo Final_page-0001.jpg" target="_blank" title="CV de jojo"><img src="tn_CV Jojo Final_page-0001.jpg"
+                        alt="cv de jojo" /></a>
+                <figcaption>Mon CV<a href="CV Jojo Final_page-0001.jpg" target="_blank">(Cliquer pour agrandir)</a>
+                </figcaption>
             </figure>
         </section>
 
@@ -83,47 +97,54 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>Envoyez moi un message !</p>
-            <form>
-                <div>
-                    <label for="prenom">Prenom</label><input type="text" name="prenom" id="prenom"/>
-                </div>
-                <div>
-                    <label for="nom">Nom</label><input type="text" name="nom" id="nom"/>
-                </div>
-                <div>
-                    <label for="email">Email</label><input type="email" name="email" id="email"/>
-                </div>
-                <div>
-                    <label>Votre message</label><br/>
-                    <textarea placeholder="Votre Message" name="message">
-
-                    </textarea>
-                </div>
-                <div>
-                    <button type="submit" value="envoyer">Envoyer</button>
-                </div>
-                
-            </form>
+            <div class="myForm">
+                <form>
+                    <div class="myInput">
+                        <label for="prenom">Prenom</label><input type="text" name="prenom" id="prenom" />
+                    </div>
+                    <div class="myInput">
+                        <label for="nom">Nom</label><input type="text" name="nom" id="nom" />
+                    </div>
+                    <div class="myInput">
+                        <label for="email">Email</label><input type="email" name="email" id="email" />
+                    </div>
+                    <div class="myText">
+                        <label>Votre message</label><br/>
+                        <textarea placeholder="Votre Message" name="message">
+    
+                        </textarea>
+                    </div>
+                    <div class="myButton">
+                        <button type="submit" value="envoyer" id="envoyer">Envoyer</button>
+                    </div>
+    
+                </form>
+            </div>
+            
         </section>
-         
+
     </main>
-    <hr/>
 
     <!--Pied de page avec des informations complementaires-->
-    <footer>
-        <table>
-            <tr>
-                <th>Email</th>
-                <th>Telephone</th>
-                <th>Adresse</th>
-            </tr>
-            <tr>
-                <td><a href="mailto:josephhenrinodichao@gmail.com">josephhenrinodichao@gmail.com</a></td>
-                <td>+221 77 525 81 45</td>
-                <td>Dakar, Thiaroye Azur, sepco 1 n 128</td>
-            </tr>
-        </table>
-           <p>Joseph Henri NODICHAO | ©Copyright 2023    <a href="#top">Haut de page</a></p>
+    <footer id="footer">
+        <div class="footer f1">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th>Adresse</th>
+                </tr>
+                <tr>
+                    <td><a href="mailto:josephhenrinodichao@gmail.com">josephhenrinodichao@gmail.com</a></td>
+                    <td>+221 77 525 81 45</td>
+                    <td>Dakar, Thiaroye Azur, sepco 1 n 128</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer f2">
+            <p>Joseph Henri NODICHAO | ©Copyright 2023 <a href="#top">Haut de page</a></p>
+        </div>
+        
     </footer>
 </body>
 

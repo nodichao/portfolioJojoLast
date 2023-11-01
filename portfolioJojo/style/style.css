@@ -1,0 +1,144 @@
+.header{
+    height: 70px;
+    position: fixed;
+    top : 0;
+    z-index: 1000;
+}
+
+.logo,.liste,.liste li,.work{
+   display: inline-block;
+}
+.navigation{
+    padding-top: 10px;
+    
+}
+.liste{
+    margin-left: 200px;
+    vertical-align: middle;
+}
+.navigation li a{
+  text-decoration: none;
+  margin: 0 25px ;
+ }
+
+.navigation li a:any-link{
+    color: white;   
+}
+.navigation li a:hover{
+    color: black;
+    font-weight: bold;
+}
+.navigation li:hover{
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+header, footer{
+    background-color: #E74C3C;
+}
+body{
+   background-color: #D6DBDF;
+   font-family: Roboto;
+}
+body *{
+      
+      margin: 0 5px;
+}
+#about{
+    margin-top: 100px;
+    text-align: center;   
+}
+#work,#resume,.footer,#contact{
+    margin-top: 60px;
+    text-align: center;
+}
+.profile-section{
+    margin-top: 30px;
+}
+.profile{
+    border-radius: 25px;
+    width: 300px;
+    border-radius: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.profile img{
+    border-radius: 50%;
+    height: 300px;
+}
+#about p{
+    
+    background-color: #99A3A4;
+    font-weight: bold ;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.work{
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ECF0F1 ;
+}
+.works{
+    margin-top: 25px;
+}
+
+.monCv{
+    margin-top: 10px;
+}
+.monCv img{
+    border-radius: 10px;
+    
+}
+
+#contact{
+   padding : 0 15px; 
+}
+
+#contact h2,#contact p,.myButton{
+    text-align: center;
+}
+
+.myForm{
+    border-radius: 15px;
+    background-color: #E74C3C ;
+    width: 30%;
+    margin : 10px auto;
+    padding: 10px;
+    color: white ;
+        
+}
+.myInput input,.myText textarea{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.myInput input{
+    height: 20px;
+}
+.f1{
+    margin-left: 25%;
+}
+#envoyer{
+    background-color: white;
+    font-family:Roboto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.myButton{
+    margin-top: 10px;
+}
+
+.liste{
+    border-radius: 15px;
+    padding-right: 140px;
+    background-color: black;
+}
+
+
+
+
